@@ -1,0 +1,32 @@
+{
+  "name": "box",
+  "version": "1.0.0",
+  "description": "box interpreter",
+  "main": "box.js",
+  "binary": {
+    "box": "./bin/box"
+  },
+  "files": [
+    "bin/box"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
+    "start": "./bin/box.js"
+  },
+  "keywords": [
+    "box",
+    "challenge",
+    "filmfreeway"
+  ],
+  "author": "Joshua Moore",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "parcel-plugin-concat": "^0.2.0",
+    "pegjs": "^0.10.0",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
