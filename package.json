@@ -6,9 +6,6 @@
   "binary": {
     "box": "./bin/box"
   },
-  "files": [
-    "bin/box"
-  ],
   "scripts": {
     "test": "mocha",
     "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
@@ -16,11 +13,9 @@
   },
   "keywords": [
     "box",
-    "challenge",
-    "filmfreeway"
   ],
-  "author": "Joshua Moore",
-  "license": "UNLICENSED",
+  "author": "Joshua Moore <moore.joshua@pm.me>",
+  "license": "MIT",
   "dependencies": {
     "parcel-plugin-concat": "^0.2.0",
     "pegjs": "^0.10.0",
