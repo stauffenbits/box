@@ -34,13 +34,13 @@ if(process.argv.length == 2){
     }
 
     try{
-      console.log(expression);
+      // console.log(expression);
       box.draw(expression)
     }catch(e){
       console.error(`drawing expression ${expression}: ${e.message}!`)
     }
 
-    console.log()
+    //console.log()
   })
 }else if(process.argv[process.argv.length-1] === '--help'){
 

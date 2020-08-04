@@ -1,11 +1,12 @@
 # Box Challenge - 
-## filmfreeway.com @ [Joshua Moore](mailto:joshua.moore@leudla.net)
 
-This challenge consists of drawing boxes either stacked horizontally or vertically, nested inside of each other. See [box.txt].
+
+## [Joshua Moore](mailto:joshua.moore@leudla.net)
+Draws boxes either stacked horizontally or vertically, nested inside of each other.
 
 Here are the formulas to the supplied examples
 
-* `[- [| [-2] 2] 2 [|2]]`
+* `[- [| [-2[]]] 2 [|2]]`
 
 * `[| [- [|2] 2] 2 [-2]]`
 

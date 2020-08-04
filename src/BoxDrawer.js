@@ -84,7 +84,7 @@ class BoxDrawer {
 
     try{
       ast = parser.parse(expression);
-      if(!this.silent) console.log('Parsing successful...');
+      //if(!this.silent) console.log('Parsing successful...');
     }catch(e){
       throw new ParseError(e.message);
     }

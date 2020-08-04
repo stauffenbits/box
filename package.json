@@ -12,12 +12,11 @@
     "start": "./bin/box.js"
   },
   "keywords": [
-    "box",
+    "box"
   ],
   "author": "Joshua Moore <moore.joshua@pm.me>",
   "license": "MIT",
   "dependencies": {
-    "parcel-plugin-concat": "^0.2.0",
     "pegjs": "^0.10.0",
     "readline": "^1.3.0"
   },
