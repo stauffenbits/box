@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha",
     "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
-    "postinstall": "npm run-script build && npm link",
+    "preinstall": "npm run-script build",
     "start": "./bin/box"
   },
   "keywords": [
