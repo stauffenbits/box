@@ -1,5 +1,5 @@
 {
-  "name": "@stauffenbits/box",
+  "name": "@fine-bitstrings/box",
   "version": "1.0.0",
   "description": "box interpreter",
   "main": "box.js",
@@ -34,5 +34,8 @@
   "directories": {
     "example": "examples",
     "test": "test"
+  },
+  "bin": {
+    "box": "BoxDrawer.js"
   }
 }
