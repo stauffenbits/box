@@ -14,7 +14,7 @@
   "keywords": [
     "box"
   ],
-  "author": "Joshua Moore <moore.joshua@pm.me>",
+  "author": "Joshua Moore <stauffenbits@pm.me>",
   "license": "MIT",
   "dependencies": {
     "pegjs": "^0.10.0",
@@ -22,5 +22,6 @@
   },
   "devDependencies": {
     "mocha": "^6.2.0"
-  }
+  },
+  "repository": "https://github.com/stauffenbits/box.git"
 }
