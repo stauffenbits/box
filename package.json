@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha",
     "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
-    "postinstall": "npm link",
+    "postinstall": "npm run-script-build && npm link",
     "start": "./bin/box"
   },
   "keywords": [
@@ -33,7 +33,9 @@
   },
   "homepage": "https://github.com/stauffenbits/box#readme",
   "directories": {
-    "example": "examples",
+    "bin": "bin",
+    "src": "src",
+    "examples": "examples",
     "test": "test"
   }
 }
