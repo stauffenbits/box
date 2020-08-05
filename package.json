@@ -1,5 +1,5 @@
 {
-  "name": "box",
+  "name": "@stauffenbits/box",
   "version": "1.0.0",
   "description": "box interpreter",
   "main": "box.js",
@@ -23,5 +23,16 @@
   "devDependencies": {
     "mocha": "^6.2.0"
   },
-  "repository": "https://github.com/stauffenbits/box.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stauffenbits/box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stauffenbits/box/issues"
+  },
+  "homepage": "https://github.com/stauffenbits/box#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  }
 }
