@@ -8,8 +8,9 @@
   },
   "scripts": {
     "test": "mocha",
-    "postinstall": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
-    "start": "./bin/box.js"
+    "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
+    "postinstall": "npm link",
+    "start": "./bin/box"
   },
   "keywords": [
     "box"
@@ -34,8 +35,5 @@
   "directories": {
     "example": "examples",
     "test": "test"
-  },
-  "bin": {
-    "box": "BoxDrawer.js"
   }
 }
