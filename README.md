@@ -1,3 +1,5 @@
+![Node.js Package](https://github.com/stauffenbits/box/workflows/Node.js%20Package/badge.svg?event=push)
+
 # Box Challenge - 
 
 
@@ -77,15 +79,15 @@ Or pass in a string via the command line, just be sure to escape your characters
   * Of course, writing out all the boxes by hand can get cumbersome, so here's
     some shortcuts: 
 
-    `[-2]` will produce two horizontally stacked children
-    `[|5]` will produce five vertically stacked children
+    `[-2[]]` will produce two horizontally stacked children
+    `[|5[]]` will produce five vertically stacked children
 
     Please note that numbers can only be used inside of other boxes.
 
 
   * You can mix and match number and literal syntax:
 
-   `[-2[|5][-3]]` will produce 
+   `[- 2[] [|5[]] [-3[]] ]` will produce 
 
 ```
     +---------------------------------+
@@ -111,7 +113,7 @@ Or pass in a string via the command line, just be sure to escape your characters
 
   * And finally, there's a shortcut for nesting boxes
 
-    `./bin/box.js '[-2[^5]3]'`
+    `./bin/box.js '[- 2[^5] 3[]]'`
 
 ```
     +-----------------------------------------+
