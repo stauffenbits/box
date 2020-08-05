@@ -6,17 +6,6 @@
 ## [Joshua Moore](mailto:joshua.moore@leudla.net)
 Draws boxes either stacked horizontally or vertically, nested inside of each other.
 
-Here are the formulas to the supplied examples
-
-* `[- [| [-2[]]] 2 [|2]]`
-
-* `[| [- [|2] 2] 2 [-2]]`
-
-* `[^5]`
-
-* `[- [|3] [|3] [|3] ]`
-
-
 To run the examples, run ./bin/box.js examples/*
 Or choose a specific example.
 Or pass in a string via the command line, just be sure to escape your characters using single quotes. 
