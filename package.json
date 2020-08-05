@@ -1,6 +1,6 @@
 {
   "name": "@stauffenbits/box",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "box interpreter",
   "main": "box.js",
   "binary": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "build": "pegjs -o src/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod +x bin/box.js && mv bin/box.js bin/box",
+    "build": "mkdir build; pegjs -o build/box-parser.js src/box-parser.pegjs && cp src/*.js bin/. && chmod u+x bin/box.js && mv bin/box.js bin/box && cp bin/* build/. && cp build/* bin/.",
     "preinstall": "npm run-script build",
     "start": "./bin/box"
   },
