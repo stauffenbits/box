@@ -166,7 +166,6 @@ process.argv.slice(2).forEach(arg => {
   }
 
   try{
-    console.log(expression);
     box.draw(expression)
   }catch(e){
     console.error(`drawing expression ${expression}: ${e.message}!`)
