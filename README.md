@@ -1,6 +1,46 @@
-![Node.js Package](https://github.com/stauffenbits/box/workflows/Node.js%20Package/badge.svg?event=push)
+# The Box Language
 
-# Box Challenge - 
+## Setup
+
+I am no build engineer...
+
+### Box Runtime
+
+The standalone Box runtime can be installed like so: 
+```sh
+$ git clone https://github.com/stauffenbits/box
+$ cd box
+$ npm install
+# npm link
+```
+
+### Box Kernel
+
+If you're feeling adventurous, you can install the jupyter kernel that goes along
+with it.
+
+#### From Source
+
+```sh
+$ git clone https://stauffenbits/BoxKernel
+$ cd BoxKernel
+$ python -m pip install -e box_kernel
+$ python -m box_kernel.install
+```
+
+might work...
+
+#### Experimental (for me) with PyPi
+Proceed with caution...
+This is what I'm going for:
+
+```
+$ python -m venv jupyter
+$ source jupyter/bin/activate
+$ python -m pip install jupyter jupyterlab box_kernel-stauffenbits
+$ python -m box_kernel.install
+$ jupyter lab
+```
 
 
 ## [Joshua Moore](mailto:joshua.moore@leudla.net)
