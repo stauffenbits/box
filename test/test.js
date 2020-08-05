@@ -8,7 +8,7 @@ describe('Parser', function(){
   describe('Simple Box', function(){ 
     describe('1 box ', function() {
       let expected = {type: 'box'}
-    
+
       it('[] should return {type: "box"}', function() {
         let boxFile = read('./examples/1.box')
         let parsed = parser.parse(boxFile)
@@ -50,17 +50,11 @@ describe('Parser', function(){
         assert.deepEqual(parsed, expected);
       })
 
-      it('[-2] should return 2 boxes nested into one, with direction specified', function(){
-        let boxFile = read('./examples/3-horizontal-number.box')
-        let parsed = parser.parse(boxFile)
-        assert.deepEqual(parsed, expected);
-      })
+      it('[-[][]] should be equal to [-2[]]', function(){
+        let parsedOne = parser.parse('[-[][]]')
+        let parsedTwo = parser.parse('[-2[]]')
 
-      it('should ignore comments and whitespace', function(){
-        let boxFile = read('./examples/3-space.box')
-        let parsed = parser.parse(boxFile)
-
-        assert.deepEqual(parsed, expected)
+        assert.deepEqual(parsedOne, parsedTwo)
       })
     })
   })
